@@ -1,0 +1,10 @@
+// grid
+$fti-col-n:              12 !default;
+$fti-gutter:             20px !default;
+$col-prefix : ".fti-col";
+
+// Turn on and off creating classes for pull, push, offset
+$is_push_pull_classes : false;
+
+// debugger: if set to true, creates classes that the chrome extension understands to create an overlay.
+$is_debugging: false;

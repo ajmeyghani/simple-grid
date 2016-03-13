@@ -1,0 +1,24 @@
+@import "grid";
+@mixin sm-down {
+	@media(max-width: 768px) {
+	  @content;
+	}
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  border: 1px dashed #000;
+  min-height: 100px;
+}
+.cards { @include fti-wrap }
+.card-item {
+	@include fti-col(4);
+	@include sm-down {
+		width: 100%;
+	}
+}

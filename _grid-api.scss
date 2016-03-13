@@ -1,0 +1,33 @@
+// containers
+// ----------
+// max width for the contain.
+// -----------
+@mixin fti-contain-static {
+  @extend %_fti-contain;
+  @extend %_fti-contain-queries;
+}
+
+@mixin fti-contain($gutter: $fti-gutter) {
+  @extend %_fti-contain;
+}
+
+@mixin fti-wrap($gutter: $fti-gutter) {
+  @extend %_fti-wrap-setup;
+}
+
+@mixin fti-col($col) {
+  @include make-fti-col($col);
+}
+
+
+// push pull offset
+// -----------------
+@mixin fti-col-offset($col) {
+  margin-left: percentage(($col / $fti-col-n));
+}
+@mixin fti-col-push($col) {
+  left: percentage(($col / $fti-col-n));
+}
+@mixin fti-col-pull($col) {
+  right: percentage(($col / $fti-col-n));
+}
